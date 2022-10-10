@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class IntroScene : MonoBehaviour {
@@ -19,6 +20,6 @@ public class IntroScene : MonoBehaviour {
     }
 
     public void OnClickStart() {
-        Debug.Log("스타트!");
+        SceneManager.LoadScene("TownMap");
     }
 }
